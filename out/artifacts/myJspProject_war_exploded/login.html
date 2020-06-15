@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工管理系统登录页面</title>
+    <script language="JavaScript">
+        if(window!=top){
+            top.location.href=location.href;
+        }
+    </script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        body {
+            padding-top: 100px;
+            padding-bottom: 120px;
+            background-color: #eee;
+        }
+
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 100px;
+        }
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+        .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .form-signin {
+            z-index: 2;
+        }
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        .form-control:focus {
+            z-index: 2;
+        }
+        .jumbotron1{
+
+            padding-bottom:50px;
+            margin-bottom:30px;
+            padding-left:550px
+        }
+        body{
+            width:100%;
+            height:100%;
+            background:url('./css/20128314114848605.jpg');
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            background-attachment:fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>欢迎回来！</h1>
+            <p>员工管理系统登录界面</p>
+        </div>
+    </div>
+    <div class="jumbotron1">
+        <form class="form-signin" action="loginServlet" method="post">
+            <label for="username" class="sr-only">账号</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="账号" required autofocus>
+            <label for="userPW" class="sr-only">密码</label>
+            <input type="password" id="userPW" name="userPW" class="form-control" placeholder="密码" required>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+        </form>
+    </div>
+</body>
+</html>

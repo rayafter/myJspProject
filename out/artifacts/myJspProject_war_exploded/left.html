@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <link rel="StyleSheet" href="dtree.css" type="text/css" />
+    <script type="text/javascript" src="dtree.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    d = new dTree('d');
+    d.add(0,-1,'员工管理系统');
+    d.add(1,0,'添加员工','addEmp.html','','right');
+    d.add(2,0,'查看员工','selectEmp','','right');
+    document.write(d);
+</script>
+</body>
+</html>
